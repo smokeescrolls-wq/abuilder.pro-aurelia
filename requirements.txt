@@ -1,0 +1,13 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-multipart==0.0.20
+pydantic==2.11.3
+
+# Aurelia core deps
+numpy==2.2.4
+soundfile==0.13.1
+scipy==1.15.2
+
+# TTS engines (edge-tts is best for server, no GUI needed)
+edge-tts==7.0.2
+gTTS==2.5.4

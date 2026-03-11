@@ -1,0 +1,31 @@
+services:
+  aurelia:
+    build: .
+    container_name: aurelia-engine
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - AURELIA_API_KEY=${AURELIA_API_KEY:-change-me-in-production}
+      - AURELIA_ENV=production
+      - AURELIA_MAX_FILE_SIZE_MB=500
+      - AURELIA_MAX_DURATION_SECONDS=600
+      - AURELIA_FILE_RETENTION_HOURS=24
+      - AURELIA_ALLOWED_ORIGINS=${AURELIA_ALLOWED_ORIGINS:-https://audiobuilder.com.br,https://app.audiobuilder.com.br}
+    volumes:
+      - aurelia-uploads:/tmp/aurelia/uploads
+      - aurelia-outputs:/tmp/aurelia/outputs
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  aurelia-uploads:
+  aurelia-outputs:
