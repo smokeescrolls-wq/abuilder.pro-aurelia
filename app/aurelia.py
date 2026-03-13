@@ -215,6 +215,28 @@ def spectral_mix_light(original, white_loss, sr, ratio=0.5):
 # ══════════════════════════════════════════════════════
 
 WHITE_SCRIPTS = {
+    "mmo": (
+        "Building a sustainable online business starts with understanding your audience "
+        "and providing genuine value. Digital marketing strategies evolve constantly, "
+        "so staying informed about current trends is essential. Content creation, email "
+        "marketing, and search engine optimization are foundational skills for anyone "
+        "looking to grow an online presence. Diversifying income streams helps create "
+        "financial stability over time. Learning from established entrepreneurs and "
+        "investing in education can accelerate your journey. Consistency and patience "
+        "are key virtues in the digital economy. Building trust with your audience "
+        "through transparency leads to long-term success and customer loyalty."
+    ),
+    "wealth": (
+        "Financial literacy is one of the most important skills for long-term prosperity. "
+        "Understanding compound interest, asset allocation, and risk management forms "
+        "the foundation of sound financial planning. Creating a budget and tracking "
+        "expenses helps identify opportunities for savings and investment. Diversifying "
+        "your portfolio across different asset classes reduces overall risk. Consulting "
+        "with a qualified financial advisor can provide personalized guidance based on "
+        "your specific goals and circumstances. Building an emergency fund provides a "
+        "safety net for unexpected situations. Starting early and being consistent with "
+        "contributions maximizes the power of compound growth over decades."
+    ),
     "weight_loss": (
         "Maintaining a healthy weight involves a combination of balanced nutrition "
         "and regular physical activity. Experts recommend focusing on whole foods, "
@@ -226,6 +248,18 @@ WHITE_SCRIPTS = {
         "over time. A balanced approach to weight management includes both dietary "
         "adjustments and increased physical activity for sustainable results."
     ),
+    "diabetes": (
+        "Managing blood sugar levels is a cornerstone of metabolic health. A balanced "
+        "diet rich in fiber, whole grains, and lean proteins helps maintain steady "
+        "glucose levels throughout the day. Regular physical activity improves insulin "
+        "sensitivity and supports cardiovascular health. Monitoring your health metrics "
+        "and maintaining regular consultations with healthcare providers ensures proactive "
+        "management. Stress management techniques such as meditation and adequate sleep "
+        "also play important roles in metabolic regulation. Staying informed about "
+        "nutritional science and evidence-based approaches empowers better daily choices. "
+        "Community support and education are valuable resources for anyone focused on "
+        "improving their metabolic wellness journey."
+    ),
     "ed": (
         "Men's health encompasses many aspects of physical and mental wellbeing. "
         "Regular check ups with your healthcare provider can help identify concerns "
@@ -236,27 +270,62 @@ WHITE_SCRIPTS = {
         "connections contribute to long term health outcomes. Prevention through "
         "regular screening is key to addressing health concerns proactively."
     ),
-    "supplements": (
-        "Understanding your nutritional needs is the first step toward better health. "
-        "Vitamins and minerals play essential roles in supporting bodily functions. "
-        "A well rounded diet typically provides most necessary nutrients. Individual "
-        "needs may vary based on lifestyle, age, and health conditions. Consulting "
-        "with a registered dietitian can help determine specific nutritional gaps. "
-        "Quality and bioavailability of nutrients matter as much as quantity."
+    "brain": (
+        "Cognitive health is influenced by a combination of lifestyle factors that "
+        "support brain function throughout life. Regular mental stimulation through "
+        "reading, puzzles, and learning new skills helps maintain neural pathways. "
+        "Physical exercise increases blood flow to the brain and promotes the growth "
+        "of new neural connections. A Mediterranean-style diet rich in omega-three "
+        "fatty acids, antioxidants, and whole grains supports cognitive function. "
+        "Quality sleep is essential for memory consolidation and mental clarity. "
+        "Social engagement and meaningful relationships contribute to emotional "
+        "resilience and cognitive reserve. Managing stress through mindfulness and "
+        "relaxation techniques protects long-term brain health."
     ),
-    "skincare": (
-        "Healthy skin starts with a consistent daily care routine. Cleansing, "
-        "moisturizing, and sun protection form the foundation of good skin health. "
-        "Dermatologists recommend using products suited to your specific skin type. "
-        "Staying hydrated and eating a balanced diet also contribute to skin appearance. "
-        "Environmental factors like humidity and pollution affect skin condition daily."
+    "anti_aging": (
+        "Healthy aging is a holistic process that involves caring for both body and "
+        "mind. Antioxidant-rich foods such as berries, leafy greens, and nuts help "
+        "combat oxidative stress at the cellular level. Regular physical activity "
+        "maintains muscle mass, bone density, and cardiovascular health as we age. "
+        "Adequate hydration and sun protection are simple yet effective daily habits. "
+        "Quality sleep supports cellular repair and regeneration processes. Staying "
+        "socially active and mentally engaged contributes to overall vitality and "
+        "life satisfaction. Consulting with healthcare professionals about preventive "
+        "care and age-appropriate screenings helps maintain optimal wellness."
     ),
-    "fitness": (
-        "Building strength through consistent workouts improves overall health. "
-        "Focus on compound movements like squats and push-ups for best results. "
-        "Cardiovascular exercise strengthens the heart and improves endurance. "
-        "Recovery time between workouts allows muscles to repair and grow stronger. "
-        "Progressive overload is the key principle for continuous improvement."
+    "joint_pain": (
+        "Joint health and mobility are fundamental to maintaining an active lifestyle. "
+        "Low-impact exercises such as swimming, cycling, and yoga help strengthen "
+        "supporting muscles without excessive strain on joints. Maintaining a healthy "
+        "weight reduces mechanical stress on weight-bearing joints significantly. "
+        "Anti-inflammatory foods including fatty fish, turmeric, and leafy greens "
+        "support joint comfort naturally. Proper posture and ergonomic awareness during "
+        "daily activities help prevent unnecessary strain. Stretching and flexibility "
+        "exercises improve range of motion and reduce stiffness. Consulting with a "
+        "physical therapist can provide personalized exercise programs tailored to "
+        "your specific needs and goals."
+    ),
+    "vision": (
+        "Eye health depends on a combination of proper nutrition, regular check-ups, "
+        "and daily protective habits. Foods rich in vitamins A, C, and E along with "
+        "zinc and omega-three fatty acids support optimal visual function. Protecting "
+        "your eyes from excessive blue light exposure and ultraviolet radiation helps "
+        "preserve long-term eye health. Regular comprehensive eye exams can detect "
+        "changes early when they are most manageable. Taking breaks from screen time "
+        "using the twenty-twenty-twenty rule reduces digital eye strain effectively. "
+        "Adequate hydration supports tear production and overall eye comfort. "
+        "Maintaining good lighting when reading or working reduces unnecessary strain."
+    ),
+    "hair_loss": (
+        "Hair health is influenced by nutrition, genetics, and overall wellness habits. "
+        "A balanced diet rich in biotin, iron, zinc, and protein provides the building "
+        "blocks for healthy hair growth. Gentle hair care practices including avoiding "
+        "excessive heat styling and harsh chemical treatments help maintain hair integrity. "
+        "Scalp health plays a crucial role in supporting hair follicle function. Regular "
+        "massage and proper cleansing promote circulation and a healthy scalp environment. "
+        "Managing stress through relaxation techniques and adequate sleep supports the "
+        "natural hair growth cycle. Consulting with a dermatologist can provide personalized "
+        "guidance based on individual factors and the latest evidence-based approaches."
     ),
     "general": (
         "Health and wellness are important aspects of everyday life. Making informed "
